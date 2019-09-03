@@ -1,16 +1,16 @@
-## To generate random date:
+## To generate random date
 
 SELECT FROM_UNIXTIME(UNIX_TIMESTAMP('2019-01-01 01:00:00')+FLOOR(RAND()*31536000)) as rand_date;
 
-## To generate random float:
+## To generate random float
 
 SELECT ROUND(RAND()*100,2) as rand_float;
 
-## To generate random int:
+## To generate random int
 
 SELECT FLOOR(ROUND(RAND()*100,2)) as rand_int;
 
-## To generate random first_name:
+## To generate random first_name
 
 DROP function if exists generate_fname;
 DELIMITER $$
@@ -23,7 +23,7 @@ END$$
 
 DELIMITER ;
 
-## To generate random last_name:
+## To generate random last_name
 
 DROP function if exists generate_lname;
 DELIMITER $$
@@ -35,7 +35,7 @@ BEGIN
 END$$
 DELIMITER ;
 
-## To generate random Country name:
+## To generate random Country name
 
 DROP function if exists generate_country_name;
 DELIMITER $$
